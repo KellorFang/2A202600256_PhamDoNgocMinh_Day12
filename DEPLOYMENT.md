@@ -17,12 +17,11 @@ curl https://believable-hope-production-38c3.up.railway.app/health
 ### API Test (with authentication)
 ```bash
 curl -X POST https://believable-hope-production-38c3.up.railway.app/ask \
-  -H "X-API-Key: YOUR_API_KEY" \
+  -H "X-API-Key: my-production-key-day12" \
   -H "Content-Type: application/json" \
   -d '{"question": "Hello"}'
 # Expected: {"question": "Hello", "answer": "...", "model": "gpt-4o-mini", ...}
 ```
-*(Thay `YOUR_API_KEY` bằng key bạn đã cài trong Railway Variables)*
 
 ### Missing/Invalid API Key Test
 ```bash
